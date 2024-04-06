@@ -1,0 +1,147 @@
+body {
+    background: linear-gradient(100deg, #3CB4E9, #167bad);
+    color: #fff;
+    background-size:contain;
+   
+    
+}
+
+
+/* Center the search box horizontally and vertically */
+.search {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text inside the div */
+    height: 100px; /* Set a fixed height, adjust as needed */
+    width: 100%;
+    height: 200px;
+    background-image: url('images/omar-ram-vcRHpfrsaL8-unsplash1.jpg');
+    background-size: cover; /* Cover the entire container with the image */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat;
+    opacity:inherit;
+}
+
+
+
+/* Style the input and button as needed */
+.search input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    width: 50%;
+}
+
+
+.search button img {
+    filter: brightness(0) invert(1);
+    height: 30px;
+    width: 25px;
+}
+
+/* Style the button (you can customize this further) */
+#search-btn {
+    cursor: pointer;
+    background-color: #141515;
+    color: #090909;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 15px;
+    margin-bottom: 2px;
+    
+   
+}
+
+/* Add an abstract animation */
+#search-btn:hover {
+    /*background-color: rgb(107, 103, 104);*/
+    animation: abstract 1s infinite alternate;
+}
+
+/* Define the abstract animation */
+@keyframes abstract {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.whether {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10%; /* Adjust as needed */
+}
+
+.whether-icon {
+    width: 200px;
+    height: 200px;
+}
+
+.temp {
+    font-size: 36px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.city {
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Add additional styling to make the items close together */
+.details .col-1,
+.details .col-2,
+.details .col-3 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Adjust as needed */
+}
+
+.col-1 img,
+.col-2 img,
+.col-3 img {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+.col-1 p,
+.col-2 p,
+.col-3 p {
+    margin: 0;
+    color: #fff;
+}
+
+.humidity,
+.Wind,
+.air {
+    font-size: 28px;
+    margin-top: -6px;
+    color: #fff;
+}
+
+#map {
+    height: 400px; /* Set the desired height */
+    width: 40%; /* Use 100% width for responsiveness */
+}
+
